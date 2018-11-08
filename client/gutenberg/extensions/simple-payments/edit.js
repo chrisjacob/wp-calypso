@@ -477,8 +477,6 @@ const applyWithSelect = withSelect( ( select, props ) => {
 	const { paymentId } = props.attributes;
 	const { getEntityRecord } = select( 'core' );
 
-	let simplePayment = undefined;
-
 	if ( ! applyWithSelect.fromApi ) {
 		const simplePaymentApiSchema = {
 			type: 'object',
@@ -512,6 +510,7 @@ const applyWithSelect = withSelect( ( select, props ) => {
 		applyWithSelect.fromApi = makeJsonSchemaParser( simplePaymentApiSchema, fromApiTransform );
 	}
 
+	let simplePayment = undefined;
 	if ( paymentId ) {
 		try {
 			const record = getEntityRecord( 'postType', SIMPLE_PAYMENTS_PRODUCT_POST_TYPE, paymentId );
