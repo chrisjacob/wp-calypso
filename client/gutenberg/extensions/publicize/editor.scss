@@ -32,6 +32,7 @@
 	font-family: Dashicons;
 	font-size: 2em;
 	margin-right: 0.2em;
+	color: #555d66;
 }
 
 .jetpack-publicize-message-note {
@@ -41,4 +42,12 @@
 
 .jetpack-publicize-add-connection-container {
 	display: flex;
+
+	a {
+		cursor: pointer;
+	}
+
+	span {
+		vertical-align: middle;
+	}
 }
