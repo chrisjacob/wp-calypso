@@ -45,6 +45,11 @@ import SegmentedControl from 'components/segmented-control';
 import ControlItem from 'components/segmented-control/item';
 import Suggestions from 'components/suggestions';
 
+/**
+ * Style dependencies
+ */
+import './style.scss';
+
 class AboutStep extends Component {
 	constructor( props ) {
 		super( props );
