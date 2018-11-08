@@ -60,7 +60,7 @@ class PublicizeSettingsButton extends Component {
 					onClick={ this.settingsClick }
 					tabIndex="0"
 				>
-					{ __( 'Connect another service' ) }
+					{ __( 'Connect new service' ) }
 				</a>
 			</div>
 		);
