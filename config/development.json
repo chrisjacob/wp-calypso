@@ -73,6 +73,7 @@
 		"gutenberg": true,
 		"gutenberg/block/jetpack-preset": true,
 		"gutenberg/opt-in": true,
+		"hello-world": true,
 		"help": true,
 		"help/courses": true,
 		"i18n/community-translator": false,

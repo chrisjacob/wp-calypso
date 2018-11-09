@@ -44,4 +44,12 @@ sections.push( {
 	css: 'devdocs',
 } );
 
+if ( config.isEnabled( 'hello-world' ) ) {
+	sections.push( {
+		name: 'hello-world',
+		paths: [ '/hello-world' ],
+		module: 'my-sites/hello-world',
+	} );
+}
+
 module.exports = sections.concat( extensionSections.filter( Boolean ) );
